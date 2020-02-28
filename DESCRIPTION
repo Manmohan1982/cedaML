@@ -1,0 +1,20 @@
+Package: cedaML
+Type: Package
+Title: Complete Exploratory Data Analysis and Machine Learning
+Version: 0.1.0
+Author: Manmohan Gosada <manmohan.gosada@qbotanalytics.com.au>
+Maintainer: Manmohan Gosada <manmohan.gosada@qbotanalytics.com.au>
+Description: This package allows you to import dataset in a .csv file.
+    You can then do basic exploratory data analysis using some in-built visualisations.
+    Once you are comfortable with the data you can apply supervised learning algorithms in a shiny GUI.
+    There are 2 tabs for model building and prediction. Follow the promots on the UI.
+License: QBOT Analytics
+Imports:
+    shiny,sqldf,ggplot2,plotly,shinydashboard,
+    lubridate,reshape2,gridExtra,gtable,grid,
+    plyr,qcc,DT,shinyjs,gtools,V8,VIM,corrplot,tabplot,
+    e1071,vcd,caret,caretEnsemble,randomForest,kernlab,
+    rpart,glmnet,xgboost,gbm,tidyverse
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
