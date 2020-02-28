@@ -1263,7 +1263,7 @@ visualise<-function(){
 
 
   ui<-shinydashboard::dashboardPage(skin = 'purple',
-                                    shinydashboard::dashboardHeader(title = shiny::h4(shiny::HTML("QBOT Analytics<br/>Data Exploration and Machine Learning")),titleWidth=430),
+                                    shinydashboard::dashboardHeader(title = shiny::h4(shiny::HTML("Complete Exploratory Data Analysis and Machine Learning")),titleWidth=430),
                                     shinydashboard::dashboardSidebar(disable=TRUE,
 
 
