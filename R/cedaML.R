@@ -1291,12 +1291,12 @@ visualise<-function(){
 
                                                                   #uiOutput("Box1"),
                                                                   shiny::tabsetPanel(
-                                                                    shiny::tabPanel("Data",shiny::fluidRow(column(6,isolate(uiOutput("FileUpload1"))))),
+                                                                    shiny::tabPanel("Data",shiny::fluidRow(shiny::column(6,isolate(uiOutput("FileUpload1"))))),
                                                                     #column(6,isolate(uiOutput("FileUpload2"))))),
-                                                                    shiny::tabPanel("Explore",uiOutput("ExploreWay"),
+                                                                    shiny::tabPanel("Explore",shiny::uiOutput("ExploreWay"),
                                                                              #column(4,uiOutput("FactorList")),
                                                                              #column(4,uiOutput("NumericList"))),
-                                                                             shiny::fluidRow(column(6,actionButton("Go", "Process"))),
+                                                                             shiny::fluidRow(shiny::column(6,shiny::actionButton("Go", "Process"))),
                                                                              shiny::verbatimTextOutput("Summary")),
                                                                     shiny::tabPanel("Plots",
                                                                                     shiny::uiOutput("PlotTypes"),
