@@ -1130,8 +1130,8 @@ visualise<-function(){
       DF<-DataTypeConversion()
 
       ggplot2::ggplot(DF, ggplot2::aes_string(x=input$Xaxis, y=input$Yaxis)) +
-        geom_jitter(size=2)+ xlab(paste(input$Xaxis))+ylab(input$Yaxis)+geom_smooth(method = lm )+
-        ggtitle(paste(input$Xaxis," Vs ",input$Yaxis))+theme(plot.title = element_text(size = 15, face = "bold"),axis.title = element_text(face="bold",size=12),
+        ggplot2::geom_jitter(size=2)+ ggplot2::xlab(paste(input$Xaxis))+ggplot2::ylab(input$Yaxis)+ggplot2::geom_smooth(method = lm )+
+        ggplot2::ggtitle(paste(input$Xaxis," Vs ",input$Yaxis))+ggplot2::theme(plot.title = element_text(size = 15, face = "bold"),axis.title = element_text(face="bold",size=12),
                                                              axis.text.x  = element_text(vjust=0.5, size=10,face="bold"),axis.text.y  = element_text(size=10,face="bold"),legend.text=element_text(size=12))
 
     })
@@ -1147,9 +1147,9 @@ visualise<-function(){
       step<-H$breaks[2]-H$breaks[1]
 
       ggplot2::ggplot(DF,ggplot2::aes_string(x=input$HistParam)) +
-        stat_bin(binwidth=step,colour="blue",fill="pink") +
-        stat_bin(binwidth=step, geom="text", aes(label=scales::percent((..count../sum(..count..)))), vjust=-1.5)+
-        scale_x_continuous(breaks=seq(minimum,maximum, by=step))+theme_bw()
+        ggplot2::stat_bin(binwidth=step,colour="blue",fill="pink") +
+        ggplot2::stat_bin(binwidth=step, geom="text", aes(label=scales::percent((..count../sum(..count..)))), vjust=-1.5)+
+        ggplot2::scale_x_continuous(breaks=seq(minimum,maximum, by=step))+theme_bw()
 
 
 
