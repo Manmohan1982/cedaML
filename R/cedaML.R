@@ -1148,7 +1148,7 @@ visualise<-function(){
 
       ggplot2::ggplot(DF,ggplot2::aes_string(x=input$HistParam)) +
         ggplot2::stat_bin(binwidth=step,colour="blue",fill="pink") +
-        ggplot2::stat_bin(binwidth=step, geom="text", aes(label=scales::percent((..count../sum(..count..)))), vjust=-1.5)+
+        ggplot2::stat_bin(binwidth=step, geom="text", ggplot2::aes(label=scales::percent((..count../sum(..count..)))), vjust=-1.5)+
         ggplot2::scale_x_continuous(breaks=seq(minimum,maximum, by=step))+theme_bw()
 
 
