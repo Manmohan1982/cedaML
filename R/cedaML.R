@@ -1132,7 +1132,7 @@ visualise<-function(){
       ggplot2::ggplot(DF, ggplot2::aes_string(x=input$Xaxis, y=input$Yaxis)) +
         ggplot2::geom_jitter(size=2)+ ggplot2::xlab(paste(input$Xaxis))+ggplot2::ylab(input$Yaxis)+ggplot2::geom_smooth(method = lm )+
         ggplot2::ggtitle(paste(input$Xaxis," Vs ",input$Yaxis))+ggplot2::theme(plot.title = ggplot2::element_text(size = 15, face = "bold"),axis.title = ggplot2::element_text(face="bold",size=12),
-                                                             axis.text.x  = ggplot2::element_text(vjust=0.5, size=10,face="bold"),axis.text.y  = element_text(size=10,face="bold"),legend.text=ggplot2::element_text(size=12))
+                                                             axis.text.x  = ggplot2::element_text(vjust=0.5, size=10,face="bold"),axis.text.y  = ggplot2::element_text(size=10,face="bold"),legend.text=ggplot2::element_text(size=12))
 
     })
 
