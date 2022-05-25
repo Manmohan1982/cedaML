@@ -4,5 +4,8 @@ Complete Exploratory Data Analysis and Machine Learning
 install.packages(devtools)
 devtools::install_github("Manmohan1982/cedaML",dependencies=TRUE)
 library(cedaML)
+```
+# How to Use this
+```R
 visualise()
 ```
