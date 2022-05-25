@@ -1278,7 +1278,7 @@ visualise<-function(){
 
                                     shinydashboard::dashboardBody(shinyjs::useShinyjs(),
                                                                   # Refreshing Shint APP
-                                                                  shinyjs::extendShinyjs(text = jsResetCode),
+                                                                  shinyjs::extendShinyjs(text = jsResetCode,functions = c("winprint")),
                                                                   # Hiding Errors
                                                                   shiny::tags$style(
                                                                     type="text/css",
