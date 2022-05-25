@@ -12,7 +12,7 @@ License: QBOT Analytics
 Imports:
     shiny,sqldf,ggplot2,plotly,shinydashboard,
     lubridate,reshape2,gridExtra,gtable,grid,
-    plyr,qcc,DT,shinyjs,gtools,V8,VIM,corrplot,tabplot,
+    plyr,qcc,DT,shinyjs,gtools,V8,VIM,corrplot,
     e1071,vcd,caret,caretEnsemble,randomForest,kernlab,
     rpart,glmnet,xgboost,gbm,tidyverse
 Encoding: UTF-8
